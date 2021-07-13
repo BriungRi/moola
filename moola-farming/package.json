@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "test": "hardhat test",
-    "compile": "hardhat compile",
-    "hardhat": "hardhat"
+    "compile": "truffle compile"
   },
   "keywords": [],
   "author": "Ambisafe inc",
@@ -24,6 +23,7 @@
     "ethers": "5.1.0",
     "hardhat": "^2.4.3",
     "hardhat-gas-reporter": "^1.0.4",
-    "mocha": "9.0.0"
+    "mocha": "9.0.0",
+    "truffle": "^5.4.0"
   }
 }
