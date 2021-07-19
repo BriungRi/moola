@@ -1,0 +1,361 @@
+{
+  "contractName": "ILendingPool",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_reserve",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_referralCode",
+          "type": "uint16"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_reserve\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"_referralCode\",\"type\":\"uint16\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ubeswap-farming/test/ILendingPool.sol\":\"ILendingPool\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ubeswap-farming/test/ILendingPool.sol\":{\"keccak256\":\"0x22c0a9073daa145e1d8d6606f0a08590072d9d5869221b8d10d8fbb329ee0d8b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3eb5ef319dd68385651b75b5088161084fbde78ce45bdcf29fded4bf18b67157\",\"dweb:/ipfs/QmQde5rWAF1tcLbjsii5PYxtWciMXagYiXn6juubhTMdAp\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\n// Interface adapted from AAVE.\n\npragma solidity ^0.8.3;\n\ninterface ILendingPool {\n    function deposit(\n        address _reserve,\n        uint256 _amount,\n        uint16 _referralCode\n    ) external payable;\n}\n",
+  "sourcePath": "/home/home/moola/moola-farming/contracts/ubeswap-farming/test/ILendingPool.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/ubeswap-farming/test/ILendingPool.sol",
+    "exportedSymbols": {
+      "ILendingPool": [
+        5666
+      ]
+    },
+    "id": 5667,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5656,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "66:23:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5666,
+        "linearizedBaseContracts": [
+          5666
+        ],
+        "name": "ILendingPool",
+        "nameLocation": "101:12:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d2d0e066",
+            "id": 5665,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "129:7:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5663,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5658,
+                  "mutability": "mutable",
+                  "name": "_reserve",
+                  "nameLocation": "154:8:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "146:16:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5657,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5660,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "180:7:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "172:15:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5659,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "172:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5662,
+                  "mutability": "mutable",
+                  "name": "_referralCode",
+                  "nameLocation": "204:13:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "197:20:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 5661,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:6:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "136:87:30"
+            },
+            "returnParameters": {
+              "id": 5664,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:30"
+            },
+            "scope": 5666,
+            "src": "120:121:30",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5667,
+        "src": "91:152:30"
+      }
+    ],
+    "src": "66:178:30"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/ubeswap-farming/test/ILendingPool.sol",
+    "exportedSymbols": {
+      "ILendingPool": [
+        5666
+      ]
+    },
+    "id": 5667,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5656,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "66:23:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5666,
+        "linearizedBaseContracts": [
+          5666
+        ],
+        "name": "ILendingPool",
+        "nameLocation": "101:12:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d2d0e066",
+            "id": 5665,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "129:7:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5663,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5658,
+                  "mutability": "mutable",
+                  "name": "_reserve",
+                  "nameLocation": "154:8:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "146:16:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5657,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5660,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "180:7:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "172:15:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5659,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "172:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5662,
+                  "mutability": "mutable",
+                  "name": "_referralCode",
+                  "nameLocation": "204:13:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5665,
+                  "src": "197:20:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 5661,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:6:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "136:87:30"
+            },
+            "returnParameters": {
+              "id": 5664,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:30"
+            },
+            "scope": 5666,
+            "src": "120:121:30",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5667,
+        "src": "91:152:30"
+      }
+    ],
+    "src": "66:178:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.3+commit.8d00100c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-19T14:15:38.870Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

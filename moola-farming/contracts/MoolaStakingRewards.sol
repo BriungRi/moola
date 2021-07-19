@@ -39,6 +39,10 @@ contract MoolaStakingRewards is IMoolaStakingRewards, RewardsDistributionRecipie
     mapping(address => uint256) private _balances;
 
     IStakingRewards public immutable externalStakingRewards;
+
+    /* ========== EVENTS ========== */
+    event PeriodFinishUpdated(uint256 originalFinish, uint256 newFinish);
+
     /* ========== CONSTRUCTOR ========== */
 
     constructor(
@@ -195,7 +199,9 @@ contract MoolaStakingRewards is IMoolaStakingRewards, RewardsDistributionRecipie
 
     // End rewards emission earlier
     function updatePeriodFinish(uint timestamp) external onlyOwner updateReward(address(0)) {
+        uint256 oldPeriodFinish = periodFinish;
         periodFinish = timestamp;
+        emit PeriodFinishUpdated(oldPeriodFinish, periodFinish);
     }
 
     // Added to support recovering LP Rewards from other systems such as BAL to be distributed to holders
